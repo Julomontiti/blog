@@ -11,6 +11,8 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Article;
+use App\Entity\Category;
 
 class BlogController extends AbstractController
 {
@@ -29,4 +31,6 @@ class BlogController extends AbstractController
     {
         return $this->render('blog/page.html.twig', ['slug' => ucwords(str_replace ('-', ' ', $slug))]);
     }
+
+
 }
