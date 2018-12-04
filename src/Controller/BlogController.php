@@ -46,8 +46,8 @@ class BlogController extends AbstractController
             ->findBy(
                 array('category' => $category),
                 array('id' => 'DESC'),
-                3
-            );
+                3);
+
         return $this->render(
             'blog/category.html.twig',
             [
